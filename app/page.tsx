@@ -12,9 +12,12 @@ export default async function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="flex min-h-screen flex-col items-center justify-evenly p-24">
-        <h1 className="text-2xl">Projects from Sanity</h1>
+        <h1 className="text-2xl my-5">Projects from Sanity</h1>
         {projects.map((project: Project) => (
-          <div key={project._id}>
+          <div
+            key={project._id}
+            className="p-4 my-5"
+          >
             <p>{project.name}</p>
             <p>
               Created at:{" "}
@@ -27,6 +30,10 @@ export default async function Home() {
                 second: "2-digit",
               }).format(dateCreatedAt)}
             </p>
+            <img
+              src={project.image}
+              alt="project thumbnail"
+            />
           </div>
         ))}
       </div>
