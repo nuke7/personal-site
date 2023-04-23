@@ -7,7 +7,7 @@ export const Header = () => {
         <div className="logo">
           <Link href="/">Personal Page</Link>
         </div>
-        <div className="links">
+        <div className="links flex justify-center">
           <Link href="/about">About</Link>
           <Link href="/code">Code</Link>
         </div>
