@@ -1,7 +1,7 @@
 import React from "react";
 import { Repository } from "@/types/Repo";
 import Link from "next/link";
-import { FaStar, FaCodeBranch, FaEye } from "react-icons/fa";
+import { FaStar, FaCodeBranch, FaEye, FaSitemap } from "react-icons/fa";
 
 async function getRepos(): Promise<Repository[]> {
   const response = await fetch("https://api.github.com/users/nuke7/repos");
@@ -29,6 +29,9 @@ const ReposPage = async () => {
                 </span>
                 <span>
                   <FaEye /> {repo.watchers_count}
+                </span>
+                <span>
+                  <FaSitemap /> {repo.size}
                 </span>
               </div>
             </Link>
