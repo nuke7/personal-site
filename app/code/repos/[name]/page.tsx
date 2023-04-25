@@ -2,7 +2,7 @@ import React from "react";
 import Repo from "@/app/components/Repo";
 import Link from "next/link";
 
-const RepoPage = (params: { name: string }) => {
+export const RepoPage = (params: { name: string }) => {
   return (
     <div className="card">
       <Repo name={params?.name} />
@@ -15,5 +15,3 @@ const RepoPage = (params: { name: string }) => {
     </div>
   );
 };
-
-export default RepoPage;
