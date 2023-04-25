@@ -18,7 +18,7 @@ const Repo = async ({ name }) => {
       <div className="card-stats">
         <div className="card-stat">
           <FaAddressCard />
-          <span>ID {repo.id}</span>
+          <span>Repo ID {repo.id}</span>
         </div>
         <div className="card-stat">
           <Link
