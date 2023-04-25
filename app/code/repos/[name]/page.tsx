@@ -1,9 +1,8 @@
 import React from "react";
 import Repo from "@/app/components/Repo";
 import Link from "next/link";
-import { ParsedUrlQuery } from "querystring";
 
-const RepoPage = ({ params }: ParsedUrlQuery) => {
+const RepoPage = (params: { name: string }) => {
   return (
     <div className="card">
       <Repo name={params?.name} />
