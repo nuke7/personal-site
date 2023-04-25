@@ -17,28 +17,33 @@ const ReposPage = async () => {
       <ul className="repo-list">
         {repos.map((repo) => (
           <li key={Math.random() * repo.id * 100}>
-            <h3 className="text-xl">{repo.name}</h3>
-            <p>{repo.description}</p>
-            <div className="repo-details">
-              <span>
-                <FaStar /> {repo.stargazers_count}
-              </span>
-              <span>
-                <FaCodeBranch /> {repo.forks_count}
-              </span>
-              <span>
-                <FaEye /> {repo.watchers_count}
-              </span>
-              <span>
-                <FaSitemap /> {repo.size}
-              </span>
-            </div>
             <Link
               href={repo.html_url}
               target="_blank"
             >
-              <FaCode style={{ display: "inline" }} />
-              <span>Source</span>
+              <h3 className="text-xl">{repo.name}</h3>
+              <p>{repo.description}</p>
+              <div className="repo-details">
+                <span>
+                  <FaStar /> {repo.stargazers_count}
+                </span>
+                <span>
+                  <FaCodeBranch /> {repo.forks_count}
+                </span>
+                <span>
+                  <FaEye /> {repo.watchers_count}
+                </span>
+                <span>
+                  <FaSitemap /> {repo.size}
+                </span>
+                <Link
+                  href={repo.html_url}
+                  target="_blank"
+                >
+                  <FaCode style={{ display: "inline" }} />
+                  <span>Source</span>
+                </Link>
+              </div>
             </Link>
           </li>
         ))}
