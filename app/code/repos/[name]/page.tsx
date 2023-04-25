@@ -2,10 +2,10 @@ import React from "react";
 import Repo from "@/app/components/Repo";
 import Link from "next/link";
 
-export const RepoPage = (params: { name: string }) => {
+const RepoPage = ({ params }) => {
   return (
     <div className="card">
-      <Repo name={params?.name} />
+      <Repo name={params.name} />
       <Link
         href="/code"
         className="btn btn-back"
@@ -15,3 +15,5 @@ export const RepoPage = (params: { name: string }) => {
     </div>
   );
 };
+
+export default RepoPage;
