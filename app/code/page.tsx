@@ -1,7 +1,7 @@
 import React from "react";
 import { Repository } from "@/types/Repo";
 import Link from "next/link";
-import { FaStar, FaCodeBranch, FaEye, FaSitemap } from "react-icons/fa";
+import { FaStar, FaCodeBranch, FaEye, FaSitemap, FaCode } from "react-icons/fa";
 
 async function getRepos(): Promise<Repository[]> {
   const response = await fetch("https://api.github.com/users/nuke7/repos");
@@ -17,23 +17,28 @@ const ReposPage = async () => {
       <ul className="repo-list">
         {repos.map((repo) => (
           <li key={Math.random() * repo.id * 100}>
-            <Link href={`/code/repos/${repo.name}`}>
-              <h3 className="text-xl">{repo.name}</h3>
-              <p>{repo.description}</p>
-              <div className="repo-details">
-                <span>
-                  <FaStar /> {repo.stargazers_count}
-                </span>
-                <span>
-                  <FaCodeBranch /> {repo.forks_count}
-                </span>
-                <span>
-                  <FaEye /> {repo.watchers_count}
-                </span>
-                <span>
-                  <FaSitemap /> {repo.size}
-                </span>
-              </div>
+            <h3 className="text-xl">{repo.name}</h3>
+            <p>{repo.description}</p>
+            <div className="repo-details">
+              <span>
+                <FaStar /> {repo.stargazers_count}
+              </span>
+              <span>
+                <FaCodeBranch /> {repo.forks_count}
+              </span>
+              <span>
+                <FaEye /> {repo.watchers_count}
+              </span>
+              <span>
+                <FaSitemap /> {repo.size}
+              </span>
+            </div>
+            <Link
+              href={repo.html_url}
+              target="_blank"
+            >
+              <FaCode style={{ display: "inline" }} />
+              <span>Source</span>
             </Link>
           </li>
         ))}
