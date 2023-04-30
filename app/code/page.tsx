@@ -12,7 +12,7 @@ async function getRepos(): Promise<Repository[]> {
 const ReposPage = async () => {
   const repos = await getRepos();
   return (
-    <div className="container">
+    <div className="container px-4 sm:px-24">
       <h2 className="text-2xl mt-4">Repositories</h2>
       <ul className="repo-list">
         {repos.map((repo) => (
