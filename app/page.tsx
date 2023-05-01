@@ -22,7 +22,10 @@ export default async function Home() {
         </a>
       </div>
       <div
-        style={{ height: "50px" }}
+        style={{
+          height: "70px",
+          width: "100vw",
+        }}
         className="projects"
         id="projects"
       ></div>
