@@ -31,18 +31,14 @@ export default async function Home() {
       ></div>
       <div>
         {projects.map((project: Project) => (
-          <>
-            {/* {
-              <div className="bg-stars1 w-screen h-64 bg-fixed bg-no-repeat bg-cover bg-center"></div>
-            } */}
-            <div
-              className="p-4 my-5 flex flex-col sm:flex-row justify-between gap-4"
-              key={project._id}
-            >
-              <div className="flex flex-col min-w-[220px]">
-                <p className="text-xl font-bold mr-4">{project.name}</p>
-                <p>project description</p>
-              </div>
+          <div key={project._id}>
+            <div className="p-4 my-5 flex flex-col sm:flex-row justify-center gap-4">
+              <Link href={`/projects/${project.slug}`}>
+                <div className="flex flex-col min-w-[220px]">
+                  <p className="text-xl font-bold mr-4">{project.name}</p>
+                  <p>project description</p>
+                </div>
+              </Link>
               <Link
                 href={project.url}
                 target="_blank"
@@ -55,7 +51,11 @@ export default async function Home() {
                 />
               </Link>
             </div>
-          </>
+            <div
+              className="w-screen h-[50vw] bg-fixed bg-no-repeat bg-cover bg-center flex flex-col justify-center items-center gap-10"
+              style={{ backgroundImage: `url(${project.bgUrl})` }}
+            ></div>
+          </div>
         ))}
       </div>
     </main>
