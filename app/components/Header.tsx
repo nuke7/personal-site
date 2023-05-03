@@ -9,7 +9,7 @@ export const Header = () => {
         </div>
         <div className="links flex justify-center">
           <Link href="/about">About</Link>
-          <Link href="/code">Code</Link>
+          <Link href="/code">Repositories</Link>
         </div>
       </div>
     </header>
