@@ -3,7 +3,7 @@ import Link from "next/link";
 export const Header = () => {
   return (
     <header className="header sticky top-0 z-50">
-      <div className="container flex items-center justify-between">
+      <div className="w-11/12 flex flex-col sm:flex-row items-center justify-between">
         <div className="logo">
           <Link href="/">Personal Page</Link>
         </div>

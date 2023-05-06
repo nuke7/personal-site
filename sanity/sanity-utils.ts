@@ -1,3 +1,4 @@
+import { Project } from "@/types/Project";
 import { createClient, groq } from "next-sanity";
 
 export async function getProjects() {
@@ -21,7 +22,7 @@ export async function getProjects() {
   );
 }
 
-export async function getProject(slug: string) {
+export async function getProject(slug: string): Promise<Project> {
   const client = createClient({
     projectId: "e5id8qy6",
     dataset: "production",
@@ -29,7 +30,7 @@ export async function getProject(slug: string) {
   });
 
   return client.fetch(
-    groq`*[_type == "project" && slug.current == $slug[0]] {
+    groq`*[_type == "project" && slug.current == $slug][0] {
 			_id,
 			_createdAt,
 			name,
@@ -39,6 +40,6 @@ export async function getProject(slug: string) {
 			url,
 			content
 		}`,
-    { slug: slug }
+    { slug }
   );
 }

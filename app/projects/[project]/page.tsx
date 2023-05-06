@@ -1,5 +1,4 @@
 import { getProject } from "@/sanity/sanity-utils";
-import React from "react";
 
 type Props = {
   params: { project: string };
@@ -8,7 +7,11 @@ type Props = {
 const Project = async ({ params }: Props) => {
   const slug = params.project;
   const project = await getProject(slug);
-  return <div>page</div>;
+  return (
+    <div className="p-4">
+      <p className="text-2xl font-bold font-white">{project.name}</p>
+    </div>
+  );
 };
 
 export default Project;
