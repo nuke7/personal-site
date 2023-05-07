@@ -8,9 +8,9 @@ const Project = async ({ params }: Props) => {
   const slug = params.project;
   const project = await getProject(slug);
   return (
-    <div className="p-4">
-      <p className="text-2xl font-bold font-white">{project.name}</p>
-    </div>
+    <section className="mx-auto px-24 my-4">
+      <p className="text-2xl font-semibold font-white">{project.name}</p>
+    </section>
   );
 };
 
