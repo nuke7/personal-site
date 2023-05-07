@@ -12,11 +12,13 @@ export default async function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between px-20">
-      <div className="bg-stars1 w-screen h-screen bg-fixed bg-no-repeat bg-cover bg-center flex flex-col justify-center items-center gap-10">
-        <h1 className="text-3xl text-center font-bold my-5">Projects from Sanity</h1>
+      <div className="bg-stars1 w-screen h-screen bg-fixed bg-no-repeat bg-cover bg-center flex flex-col justify-evenly items-center gap-10">
+        <h1 className="text-3xl sm:text-4xl text-center font-bold my-5">
+          Projects from Sanity
+        </h1>
         <a
           href="#projects"
-          className="text-3xl block sm:text-4xl active:text-blue-700 hover:text-blue-300"
+          className="text-3xl block sm:text-5xl active:text-blue-700 hover:text-blue-300"
         >
           <FaChevronCircleDown />
         </a>
