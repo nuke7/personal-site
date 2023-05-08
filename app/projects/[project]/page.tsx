@@ -15,7 +15,7 @@ const Project = async ({ params }: Props) => {
       <div className="mx-auto px-4 sm:px-24 my-4 flex justify-between items-center">
         <p className="text-2xl font-semibold font-white">{project.name}</p>
         <a
-          className="bg-blue-700 rounded-lg text-gray-200 font-bold p-3 pt-2 mt-2 hover:bg-blue-500"
+          className="bg-blue-700 rounded-lg text-center text-gray-200 font-bold p-3 pt-2 mt-2 hover:bg-blue-500"
           href={project.url}
           title="view project"
           target="_blank"

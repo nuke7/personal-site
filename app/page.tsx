@@ -36,15 +36,16 @@ export default async function Home() {
         {projects.map((project: Project) => (
           <div key={project._id}>
             <div className="p-4 my-5 flex flex-col sm:flex-row justify-center gap-4">
-              <Link
-                href={`/projects/${project.slug}`}
-                className="p-4 rounded-lg border border-gray-500 hover:-translate-y-1 transition-all duration-200 hover:border-2 hover:border-white"
-              >
-                <div className="flex flex-col w-56">
-                  <p className="text-xl font-bold mr-4">{project.name}</p>
-                  <PortableText value={project.content} />
-                </div>
-              </Link>
+              <div className="flex flex-col w-56">
+                <p className="text-xl font-bold mr-4">{project.name}</p>
+
+                <Link
+                  href={`/projects/${project.slug}`}
+                  className="p-4 rounded-lg border border-gray-700 hover:-translate-y-1 transition-all duration-200 hover:border-2 hover:border-white bg-blue-700 rounded-lg text-gray-200 font-bold p-3 pt-2 mt-4 hover:bg-blue-500 text-center text-xl"
+                >
+                  Click for details
+                </Link>
+              </div>
               <Link
                 href={project.url}
                 target="_blank"
