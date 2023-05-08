@@ -4,6 +4,7 @@ import { getProjects } from "@/sanity/sanity-utils";
 import { Project } from "@/types/Project";
 import Link from "next/link";
 import { FaChevronCircleDown } from "react-icons/fa";
+import { PortableText } from "@portabletext/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,10 +36,13 @@ export default async function Home() {
         {projects.map((project: Project) => (
           <div key={project._id}>
             <div className="p-4 my-5 flex flex-col sm:flex-row justify-center gap-4">
-              <Link href={`/projects/${project.slug}`}>
-                <div className="flex flex-col min-w-[220px]">
+              <Link
+                href={`/projects/${project.slug}`}
+                className="p-4 rounded-lg border border-gray-500 hover:-translate-y-1 transition-all duration-200 hover:border-2 hover:border-white"
+              >
+                <div className="flex flex-col w-56">
                   <p className="text-xl font-bold mr-4">{project.name}</p>
-                  <p>project description</p>
+                  <PortableText value={project.content} />
                 </div>
               </Link>
               <Link

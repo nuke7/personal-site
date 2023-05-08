@@ -11,7 +11,7 @@ const Project = async ({ params }: Props) => {
   const slug = params.project;
   const project = await getProject(slug);
   return (
-    <section>
+    <section className="mx-auto max-w-4xl">
       <div className="mx-auto px-4 sm:px-24 my-4 flex justify-between items-center">
         <p className="text-2xl font-semibold font-white">{project.name}</p>
         <a
@@ -28,9 +28,9 @@ const Project = async ({ params }: Props) => {
         <Image
           src={project.image}
           alt="project image"
-          width={1920}
-          height={1080}
-          className="mt-10 mb-10 border-2 rounded-lg object-cover"
+          width={640}
+          height={360}
+          className="mt-10 mb-10 mx-auto border-2 rounded-lg object-cover"
         />
         <Link
           href="/"
