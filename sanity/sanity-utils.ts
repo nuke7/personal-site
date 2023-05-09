@@ -12,6 +12,7 @@ export async function getProjects() {
 			"image": image.asset->url,
       bgUrl,
 			url,
+			repoUrl,
 			content
 		}`
   );
@@ -27,6 +28,7 @@ export async function getProject(slug: string): Promise<Project> {
 			"image": image.asset->url,
       bgUrl,
 			url,
+			repoUrl,
 			content
 		}`,
     { slug }

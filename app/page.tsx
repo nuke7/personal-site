@@ -4,7 +4,6 @@ import { getProjects } from "@/sanity/sanity-utils";
 import { Project } from "@/types/Project";
 import Link from "next/link";
 import { FaChevronCircleDown } from "react-icons/fa";
-import { PortableText } from "@portabletext/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -43,7 +42,7 @@ export default async function Home() {
                   href={`/projects/${project.slug}`}
                   className="p-4 rounded-lg border border-gray-700 hover:-translate-y-1 transition-all duration-200 hover:border-2 hover:border-white bg-blue-700 rounded-lg text-gray-200 font-bold p-3 pt-2 mt-4 hover:bg-blue-500 text-center text-xl"
                 >
-                  Click for details
+                  View details
                 </Link>
               </div>
               <Link

@@ -1,4 +1,3 @@
-import React from "react";
 import { Repository } from "@/types/Repo";
 import Link from "next/link";
 import { FaStar, FaCodeBranch, FaEye, FaCode, FaRulerHorizontal } from "react-icons/fa";

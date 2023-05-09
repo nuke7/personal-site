@@ -8,5 +8,6 @@ export interface Project {
   slug: string;
   image: string;
   url: string;
+  repoUrl: string;
   content: PortableTextBlock[];
 }

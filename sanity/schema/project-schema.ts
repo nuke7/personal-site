@@ -19,6 +19,11 @@ const project = {
       ],
     },
     {
+      name: "repoUrl",
+      title: "Project's Repository URL",
+      type: "url",
+    },
+    {
       name: "bgUrl",
       title: "Background Image URL",
       type: "url",
