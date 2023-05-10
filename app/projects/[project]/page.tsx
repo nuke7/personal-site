@@ -42,7 +42,7 @@ const Project = async ({ params }: Props) => {
         />
         <Link
           href="/"
-          className="bg-gray-700 rounded-lg text-gray-200 font-bold p-3 pt-2 mt-2 hover:bg-blue-700"
+          className="bg-gray-700 rounded-lg text-gray-200 font-bold p-3 pt-2 mt-2 mb-4 hover:bg-blue-700"
         >
           Back to home
         </Link>

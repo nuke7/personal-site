@@ -49,10 +49,10 @@ const ReposPage = async () => {
               name={repo.name}
               description={repo.description}
               size={repo.size}
-              html_url={""}
-              stargazers={0}
-              forks={0}
-              watchers={0}
+              html_url={repo.html_url}
+              stargazers={repo.stargazers_count}
+              forks={repo.forks_count}
+              watchers={repo.watchers_count}
             />
           </li>
         ))}
