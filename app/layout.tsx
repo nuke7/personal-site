@@ -1,4 +1,5 @@
 import { Header } from "./components/Header";
+
 import "./globals.css";
 
 export const metadata = {
@@ -12,7 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       lang="en"
       className="scroll-smooth"
     >
-      <body>
+      <body id="main">
         <Header />
         {children}
       </body>

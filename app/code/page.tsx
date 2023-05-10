@@ -1,6 +1,7 @@
 import { Repository } from "@/types/Repo";
 import Link from "next/link";
 import { FaStar, FaCodeBranch, FaEye, FaCode, FaRulerHorizontal } from "react-icons/fa";
+import ModalWrapper from "../components/ModalWrapper";
 
 async function getRepos(): Promise<Repository[]> {
   const response = await fetch("https://api.github.com/users/nuke7/repos");
@@ -35,15 +36,24 @@ const ReposPage = async () => {
                 <span>
                   <FaRulerHorizontal /> {repo.size}
                 </span>
-                <Link
-                  href={repo.html_url}
-                  target="_blank"
-                >
-                  <FaCode style={{ display: "inline" }} />
-                  <span>Source</span>
-                </Link>
               </div>
             </Link>
+            <Link
+              href={repo.html_url}
+              target="_blank"
+            >
+              <FaCode style={{ display: "inline" }} />
+              <span>Source</span>
+            </Link>
+            <ModalWrapper
+              name={repo.name}
+              description={repo.description}
+              size={repo.size}
+              html_url={""}
+              stargazers={0}
+              forks={0}
+              watchers={0}
+            />
           </li>
         ))}
       </ul>
