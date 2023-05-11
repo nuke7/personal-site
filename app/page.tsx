@@ -18,7 +18,7 @@ export default async function Home() {
         </h1>
         <a
           href="#projects"
-          className="text-3xl block sm:text-5xl active:text-blue-700 hover:text-blue-300"
+          className="text-3xl text-slate-200 block sm:text-5xl active:text-blue-700 hover:text-blue-300"
         >
           <FaChevronCircleDown />
         </a>

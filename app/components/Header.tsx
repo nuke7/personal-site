@@ -12,9 +12,19 @@ export const Header = () => {
             Personal Page
           </Link>
         </div>
-        <div className="links flex justify-center">
-          <Link href="/about">About</Link>
-          <Link href="/code">Repositories</Link>
+        <div className="links flex justify-center gap-4">
+          <Link
+            href="/about"
+            className="text-slate-200"
+          >
+            About
+          </Link>
+          <Link
+            href="/code"
+            className="text-slate-200"
+          >
+            Repositories
+          </Link>
           <DarkModeButton />
         </div>
       </div>
