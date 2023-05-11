@@ -11,18 +11,19 @@ async function getRepos(): Promise<Repository[]> {
 
 const ReposPage = async () => {
   const repos = await getRepos();
+
   return (
-    <div className="container px-4 sm:px-24">
-      <h2 className="text-2xl mt-4">Repositories</h2>
-      <ul className="repo-list">
+    <div className="max-w-6xl mx-auto px-4 sm:px-24 dark:bg-gray-500 bg-slate-200">
+      <h2 className="text-2xl dark:text-gray-100">All my public GitHub repos</h2>
+      <ul className="list-none m-0 p-0">
         {repos.map((repo) => (
           <li
             key={Math.random() * repo.id * 100}
-            className="bg-gray-700 dark:bg-white dark:text-black text-white rounded-md p-4"
+            className="dark:bg-gray-700 bg-white dark:text-white text-black rounded-md p-4 my-8"
           >
             <h3 className="text-xl">{repo.name}</h3>
             <p>{repo.description}</p>
-            <div className="repo-details">
+            <div className="flex justify-evenly items-center mt-4 dark:text-slate-200 text-gray-900">
               <span>
                 <FaStar /> {repo.stargazers_count}
               </span>
@@ -38,8 +39,9 @@ const ReposPage = async () => {
               <Link
                 href={repo.html_url}
                 target="_blank"
+                className="block dark:bg-gray-700 bg-white dark:text-white text-black rounded-md p-4 border-solid border-gray-300 border-2 hover:drop-shadow-lg transition-all duration-300 dark:hover:-translate-y-1 text-center"
               >
-                <FaCode style={{ display: "inline" }} />
+                <FaCode style={{ display: "block", margin: "auto" }} />
                 <span>Source</span>
               </Link>
             </div>
