@@ -13,7 +13,7 @@ export default async function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between px-20">
       <div className="bg-stars1 w-screen h-screen bg-fixed bg-no-repeat bg-cover bg-center flex flex-col justify-evenly items-center gap-10">
-        <h1 className="text-3xl sm:text-4xl text-center font-bold my-5">
+        <h1 className="text-3xl sm:text-4xl text-center font-bold my-5 dark:text-red-200">
           Projects from Sanity
         </h1>
         <a

@@ -3,7 +3,6 @@
 import { NextUIProvider } from "@nextui-org/react";
 import { Modal, useModal, Button, Text } from "@nextui-org/react";
 import { FaRulerHorizontal } from "react-icons/fa";
-import ReactModal from "react-modal";
 
 type ModalProps = {
   name: string;
@@ -14,8 +13,6 @@ type ModalProps = {
   forks: number;
   watchers: number;
 };
-
-ReactModal.setAppElement("#main");
 
 const ModalWrapper: React.FC<ModalProps> = (props) => {
   const { setVisible, bindings } = useModal();
@@ -39,19 +36,25 @@ const ModalWrapper: React.FC<ModalProps> = (props) => {
           <Text
             id="modal-title"
             size={18}
+            className="text-gray-700 text-3xl font-bold"
           >
             {props.name}
           </Text>
         </Modal.Header>
         <Modal.Body>
-          <Text id="modal-description">{props.description}</Text>
+          <Text
+            id="modal-description"
+            className="text-gray-500 text-xl font-bold"
+          >
+            {props.description}
+          </Text>
           <span>
             <FaRulerHorizontal /> {props.size}
           </span>
         </Modal.Body>
         <Modal.Footer>
           <Button
-            className="bg-gray-700 rounded-lg text-gray-200 font-bold p-3 mt-2 hover:bg-blue-700"
+            className="bg-gray-700 rounded-lg text-gray-200 font-bold p-3 mt-2 hover:bg-blue-700 text-white"
             auto
             flat
             onPress={() => setVisible(false)}

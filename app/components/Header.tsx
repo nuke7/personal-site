@@ -1,5 +1,5 @@
-import React from "react";
 import Link from "next/link";
+import DarkModeButton from "./DarkModeButton";
 export const Header = () => {
   return (
     <header className="header sticky top-0 z-50">
@@ -10,6 +10,7 @@ export const Header = () => {
         <div className="links flex justify-center">
           <Link href="/about">About</Link>
           <Link href="/code">Repositories</Link>
+          <DarkModeButton />
         </div>
       </div>
     </header>
