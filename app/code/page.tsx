@@ -13,7 +13,7 @@ const ReposPage = async () => {
   const repos = await getRepos();
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-24 dark:bg-gray-500 bg-slate-200">
+    <div className="max-w-6xl mx-auto px-4 sm:px-24 dark:bg-gray-500 bg-slate-200 pb-8">
       <h2 className="text-2xl dark:text-gray-100">All my public GitHub repos</h2>
       <ul className="list-none m-0 p-0">
         {repos.map((repo) => (

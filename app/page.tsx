@@ -13,7 +13,7 @@ export default async function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between px-20">
       <div className="bg-stars2 dark:bg-stars1 w-screen h-screen bg-fixed bg-no-repeat bg-cover bg-center flex flex-col justify-evenly items-center gap-10">
-        <h1 className="text-3xl sm:text-4xl text-center font-bold my-5 dark:text-white">
+        <h1 className="text-3xl sm:text-4xl text-center font-bold my-5 text-white">
           Projects from Sanity
         </h1>
         <a
@@ -34,9 +34,9 @@ export default async function Home() {
       <div>
         {projects.map((project: Project) => (
           <div key={project._id}>
-            <div className="max-w-5xl mx-auto p-4 flex flex-col sm:flex-row justify-center gap-4 bg-slate-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 rounded-lg">
-              <div className="flex flex-col w-56">
-                <p className="text-3xl font-bold mr-4">{project.name}</p>
+            <div className="max-w-5xl mx-auto p-4 flex flex-col sm:flex-row justify-center gap-4 bg-slate-200 dark:bg-gray-900 text-gray-700 dark:text-gray-200 rounded-lg sm:min-h-[400px]">
+              <div className="flex flex-col sm:max-w-56 w-full justify-center items-center">
+                <p className="text-3xl font-bold text-center mr-4">{project.name}</p>
 
                 <Link
                   href={`/projects/${project.slug}`}
@@ -48,9 +48,10 @@ export default async function Home() {
               <Link
                 href={project.url}
                 target="_blank"
+                className="flex flex-col justify-center items-center sm:min-w-56 w-full"
               >
                 <img
-                  className="object-cover rounded-lg border border-gray-500 hover:-translate-y-1 transition-all duration-200 hover:border-2 hover:border-white"
+                  className="object-cover rounded-lg border border-gray-500 hover:-translate-y-1 transition-all duration-200 hover:border-2 hover:border-white mx-auto"
                   style={{ width: "100%", maxWidth: "500px" }}
                   src={project.image}
                   alt="project thumbnail"
