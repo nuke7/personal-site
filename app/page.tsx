@@ -12,8 +12,8 @@ export default async function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between px-20">
-      <div className="bg-stars1 w-screen h-screen bg-fixed bg-no-repeat bg-cover bg-center flex flex-col justify-evenly items-center gap-10">
-        <h1 className="text-3xl sm:text-4xl text-center font-bold my-5 dark:text-red-200">
+      <div className="bg-stars2 dark:bg-stars1 w-screen h-screen bg-fixed bg-no-repeat bg-cover bg-center flex flex-col justify-evenly items-center gap-10">
+        <h1 className="text-3xl sm:text-4xl text-center font-bold my-5 dark:text-white">
           Projects from Sanity
         </h1>
         <a
@@ -28,13 +28,13 @@ export default async function Home() {
           height: "70px",
           width: "100vw",
         }}
-        className="projects"
+        className="bg-stars2 dark:bg-stars1 w-screen h-screen bg-fixed bg-no-repeat bg-cover bg-center"
         id="projects"
       ></div>
       <div>
         {projects.map((project: Project) => (
           <div key={project._id}>
-            <div className="p-4 my-5 flex flex-col sm:flex-row justify-center gap-4">
+            <div className="max-w-5xl mx-auto p-4 flex flex-col sm:flex-row justify-center gap-4 bg-slate-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 rounded-lg">
               <div className="flex flex-col w-56">
                 <p className="text-3xl font-bold mr-4">{project.name}</p>
 
