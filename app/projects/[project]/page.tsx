@@ -13,7 +13,7 @@ const Project = async ({ params }: Props) => {
   return (
     <section className="mx-auto max-w-4xl">
       <div className="mx-auto px-4 sm:px-24 my-4 flex gap-4 flex-col sm:flex-row justify-between items-center">
-        <p className="text-2xl font-semibold font-white">{project.name}</p>
+        <p className="text-2xl font-semibold dark:text-slate-200">{project.name}</p>
         <a
           className="bg-blue-700 rounded-lg text-center text-gray-200 font-bold p-3 pt-2 mt-2 hover:bg-blue-500"
           href={project.url}
@@ -31,7 +31,7 @@ const Project = async ({ params }: Props) => {
           View code repository
         </a>
       </div>
-      <div className="px-4 sm:px-24 my-4">
+      <div className="px-4 sm:px-24 my-4 dark:text-slate-100">
         <PortableText value={project.content} />
         <Image
           src={project.image}

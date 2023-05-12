@@ -13,7 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       lang="en"
       className="scroll-smooth"
     >
-      <body>
+      <body className="bg-slate-100 dark:bg-slate-800 h-full">
         <Header />
         {children}
       </body>
