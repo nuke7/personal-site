@@ -15,9 +15,9 @@ export default function AboutPage() {
         Back to home
       </Link>
       <p className="text-gray-200 mt-5">Javascript</p>
-      <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mt-2">
+      <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-600 mt-2">
         <div
-          className="bg-blue-600 h-2.5 rounded-full"
+          className="bg-blue-600 dark:bg-blue-400 h-2.5 rounded-full"
           style={{ width: "55%" }}
         ></div>
       </div>
