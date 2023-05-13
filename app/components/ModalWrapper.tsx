@@ -45,7 +45,7 @@ const ModalWrapper: React.FC<ModalProps> = (props) => {
         <Modal.Body className="dark:bg-gray-700 bg-white dark:text-white text-black">
           <Text
             id="modal-description"
-            className="text-gray-500 dark:text-gray-200 italic"
+            className="text-gray-500 text-lg dark:text-gray-200 italic"
           >
             {props.description}
           </Text>

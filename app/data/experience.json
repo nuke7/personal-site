@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Freelancer",
+    "description": "Designed and implemented the user interface for an NFT deployment into metaverse service's middleware with figma, utilizing the established company color scheme. Developed frontend components using vue3 to enhance user experience and meet changing requirements in an agile environment. Collaborated closely with PO to ensure maximum usability and functionality.",
+    "role": "Frontend Developer",
+    "from": "Jul 2022",
+    "to": "Present"
+  },
+  {
+    "id": 2,
+    "name": "Diligent",
+    "description": "Developed and implemented angular frontend components, improving the user experience. Conducted thorough UI testing to ensure optimal functionality and usability. Collaborated closely with stakeholders in an agile environment, ensuring effective communication and alignment on UI/UX vision..",
+    "role": "Software Engineer",
+    "from": "Jan 2022",
+    "to": "Present"
+  },
+  {
+    "id": 3,
+    "name": "Deel Kft.",
+    "description": "    Developed and implemented angular frontend components, improving the user experience. Conducted thorough UI testing to ensure optimal functionality and usability. Collaborated closely with stakeholders in an agile environment, ensuring effective communication and alignment on UI/UX vision.",
+    "role": "Junior Frontend Developer",
+    "from": "Jun 2021",
+    "to": "Feb 2022"
+  }
+]
