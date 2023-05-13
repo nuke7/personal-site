@@ -1,15 +1,9 @@
 import Link from "next/link";
-import { type } from "os";
+import technical from "../../data/technical.json";
 
 export const metadata = {
   title: "About Page",
 };
-
-async function fetchPRogress() {
-  const res = await fetch("http://localhost:3000/api/progress");
-  const progress = await res.json();
-  return progress;
-}
 
 type tech = {
   id: number;
@@ -18,7 +12,6 @@ type tech = {
 };
 
 export default async function AboutPage() {
-  const progress = await fetchPRogress();
   return (
     <div className="mx-auto px-4 sm:px-24 my-4 max-w-7xl">
       <h1 className="text-3xl dark:text-slate-200 my-10">this is the about page</h1>
@@ -29,7 +22,7 @@ export default async function AboutPage() {
         Back to home
       </Link>
       <h2 className="dark:text-gray-200 text-2xl mt-10">Technical Skills</h2>
-      {progress.technical.map((tech: tech) => (
+      {technical.map((tech: tech) => (
         <div key={tech.id}>
           <p className="dark:text-gray-200 mt-5">{tech.title}</p>
           <div className="w-full bg-gray-400 rounded-full h-2.5 dark:bg-gray-600 mt-2">
