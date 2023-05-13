@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "Javascript",
+    "percentage": "70%"
+  },
+  {
+    "id": 2,
+    "title": "HTML 5",
+    "percentage": "85%"
+  },
+  {
+    "id": 3,
+    "title": "SASS/SCSS",
+    "percentage": "80%"
+  },
+  {
+    "id": 4,
+    "title": "CSS libraries",
+    "percentage": "75%"
+  },
+  {
+    "id": 5,
+    "title": "Typescript",
+    "percentage": "54%"
+  },
+  {
+    "id": 6,
+    "title": "React",
+    "percentage": "65%"
+  },
+  {
+    "id": 7,
+    "title": "Vue",
+    "percentage": "55%"
+  },
+  {
+    "id": 8,
+    "title": "Angular",
+    "percentage": "60%"
+  },
+  {
+    "id": 9,
+    "title": "Git",
+    "percentage": "67%"
+  },
+  {
+    "id": 10,
+    "title": "Node.js",
+    "percentage": "40%"
+  }
+]
