@@ -38,7 +38,7 @@ export default async function AboutPage() {
         Frontend Developer with 3+ years of remote work experience focusing on UX.
       </p>
       <ProfilePic />
-      <section className="flex justify-center mb-5 items-center sm:gap-4">
+      <section className="flex justify-center mb-5 items-center gap-10">
         <Link
           href="https://www.linkedin.com/in/martongombos/"
           target="_blank"
