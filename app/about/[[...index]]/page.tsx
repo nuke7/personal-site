@@ -1,15 +1,9 @@
-import Link from "next/link";
-import technical from "../../data/technical.json";
-import languages from "../../data/languages.json";
-import experience from "../../data/experience.json";
 import { ProfilePic } from "@/app/components/ProfilePic";
-import {
-  FaLinkedinIn,
-  FaGithub,
-  FaTwitter,
-  FaFacebookF,
-  FaInstagram,
-} from "react-icons/fa";
+import Link from "next/link";
+import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import experience from "../../data/experience.json";
+import languages from "../../data/languages.json";
+import technical from "../../data/technical.json";
 
 export const metadata = {
   title: "About Page",
@@ -102,7 +96,7 @@ export default async function AboutPage() {
             <div className="w-full bg-gray-400 rounded-full h-2.5 dark:bg-gray-600 mt-2">
               <div
                 className="bg-blue-600 dark:bg-blue-400 h-2.5 rounded-full"
-                style={{ width: tech.percentage }}
+                style={{ width: `${Math.ceil(Math.random() * 95)}%` }}
               ></div>
             </div>
           </div>
