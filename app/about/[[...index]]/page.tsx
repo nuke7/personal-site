@@ -88,7 +88,7 @@ export default async function AboutPage() {
 
       <section>
         <h2 className="dark:text-gray-200 text-3xl mt-10 text-center">
-          Progress Bars for Technical Skills 😜
+          Progress Bars for Technical Skills 😜*
         </h2>
         {technical.map((tech: progressBarType) => (
           <div key={tech.id}>
@@ -144,10 +144,19 @@ export default async function AboutPage() {
           Junior Frontend Developer - UI Engineer
         </p>
         <p className="dark:text-gray-200 mt-5 font-bold lg:text-center">
+          BGE - Sep 2010 - Apr 2015
+        </p>
+        <p className="dark:text-gray-200 mt-2 mb-10 lg:text-center">
+          Commerce and Marketing - B.Sc.
+        </p>
+        <p className="dark:text-gray-200 mt-5 font-bold lg:text-center">
           BME - Sep 2008 - May 2010
         </p>
         <p className="dark:text-gray-200 mt-2 mb-10 lg:text-center">
           Software Engineering - Unfinished
+        </p>
+        <p className="text-gray-400 italic font-small my-4">
+          * Randomly generated values
         </p>
       </section>
       <Link
