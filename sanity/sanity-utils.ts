@@ -14,7 +14,8 @@ export async function getProjects() {
 			url,
 			repoUrl,
 			content
-		}`
+		}`,
+    { next: { revalidate: 60 } }
   );
 }
 

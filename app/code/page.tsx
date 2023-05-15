@@ -4,7 +4,11 @@ import { FaStar, FaCodeBranch, FaEye, FaCode, FaRulerHorizontal } from "react-ic
 import ModalWrapper from "../components/ModalWrapper";
 
 async function getRepos(): Promise<Repository[]> {
-  const response = await fetch("https://api.github.com/users/nuke7/repos");
+  const response = await fetch("https://api.github.com/users/nuke7/repos", {
+    next: {
+      revalidate: 60,
+    },
+  });
   const repos = await response.json();
   return repos;
 }
