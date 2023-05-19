@@ -18,8 +18,7 @@
   {
     "id": 3,
     "name": "Deel Kft.",
-    "description": "    Developed and implemented angular frontend components, improving the user experience. Conducted thorough UI testing to ensure optimal functionality and usability. Collaborated closely with stakeholders in an agile environment, ensuring effective communication and alignment on UI/UX vision.",
-    "role": "Junior Frontend Developer",
+    "description": "Built a User Interface connected to a headless node.js CMS system (Strapi) for administrators. Created and Edited basic RESTful API endpoints with node.js (Strapi). Created basic design for a functional user interface together with the senior developer",
     "from": "Jun 2021",
     "to": "Feb 2022"
   }
