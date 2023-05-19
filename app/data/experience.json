@@ -19,6 +19,7 @@
     "id": 3,
     "name": "Deel Kft.",
     "description": "Built a User Interface connected to a headless node.js CMS system (Strapi) for administrators. Created and Edited basic RESTful API endpoints with node.js (Strapi). Created basic design for a functional user interface together with the senior developer",
+    "role": "Junior Frontend Developer",
     "from": "Jun 2021",
     "to": "Feb 2022"
   }
