@@ -7,7 +7,7 @@ export const Header = () => {
         <div className="mb-2 text-center">
           <Link
             href="/"
-            className="text-center text-4xl font-bold bg-gradient-to-r from-purple-700 via-blue-300 to-pink-900 bg-clip-text text-transparent"
+            className="text-center text-4xl font-bold bg-gradient-to-r from-slate-200 via-blue-300 to-slate-400 bg-clip-text text-transparent"
           >
             Personal Page
           </Link>
