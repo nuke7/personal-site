@@ -38,7 +38,7 @@ export default async function Home() {
           className="bg-fixed bg-no-repeat bg-cover bg-center"
           style={{ backgroundImage: `url(${project.bgUrl})` }}
         >
-          <div className="max-w-5xl mx-auto p-4 flex flex-col sm:flex-row justify-center gap-4 bg-slate-200 dark:bg-gray-900 text-gray-700 dark:text-gray-200 rounded-lg sm:min-h-[400px] mt-20">
+          <div className="max-w-5xl mx-auto p-4 flex flex-col sm:flex-row justify-center gap-4 bg-slate-200 dark:bg-gray-900 text-gray-700 dark:text-gray-200 rounded-lg sm:min-h-[400px] mt-40">
             <div className="flex flex-col sm:max-w-56 w-full justify-center items-center">
               <p className="text-3xl font-bold text-center mr-4">{project.name}</p>
 
