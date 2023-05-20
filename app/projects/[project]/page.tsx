@@ -12,7 +12,7 @@ const Project = async ({ params }: Props) => {
   const project = await getProject(slug);
   return (
     <section
-      className="bg-fixed bg-no-repeat bg-cover bg-center w-screen h-fit min-h-screen pt-4"
+      className="bg-fixed bg-no-repeat bg-cover bg-center w-screen h-max min-h-screen pt-4 pb-10"
       style={{ backgroundImage: `url(${project.bgUrl})` }}
     >
       <div className="mx-auto px-4 sm:px-24 my-4 flex gap-4 flex-col sm:flex-row justify-between items-center max-w-4xl">
