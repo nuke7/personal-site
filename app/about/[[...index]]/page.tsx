@@ -26,7 +26,7 @@ type company = {
 
 export default async function AboutPage() {
   return (
-    <div className="mx-auto px-4 sm:px-24 mb-4 max-w-7xl pb-5 bg-slate-200 dark:bg-slate-800">
+    <div className="mx-auto px-4 sm:px-24 max-w-7xl pb-5 bg-slate-200 dark:bg-slate-800">
       <h1 className="text-4xl dark:text-slate-200 mb-2 pt-4 text-center">About me</h1>
       <p className="dark:text-gray-200 mt-2 italic text-center">
         Frontend Developer with 3+ years of remote work experience focusing on UX.
