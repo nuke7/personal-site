@@ -17,37 +17,39 @@ const ReposPage = async () => {
   const repos = await getRepos();
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-24 dark:bg-gray-500 bg-slate-200 pb-8">
+    <div className="max-w-7xl mx-auto px-4 sm:px-24 dark:bg-gray-500 bg-slate-200 pb-8">
       <h1 className="text-3xl dark:text-gray-100 pt-4">All my public GitHub repos</h1>
-      <ul className="list-none m-0 p-0">
+      <ul className="list-none m-0 p-0 flex grow flex-wrap justify-center items-stretch content-stretch gap-8 sm:flex-row flex-col">
         {repos.map((repo) => (
           <li
             key={Math.random() * repo.id * 100}
-            className="dark:bg-gray-700 bg-white dark:text-white text-black rounded-md p-4 my-8"
+            className="sm:w-80 w-full flex flex-col justify-between dark:bg-gray-700 bg-white dark:text-white text-black rounded-md p-4 my-8"
           >
-            <h3 className="text-xl">{repo.name}</h3>
-            <p>{repo.description}</p>
-            <div className="flex justify-evenly items-center mt-4 dark:text-slate-200 text-gray-900">
-              <span>
-                <FaStar /> {repo.stargazers_count}
-              </span>
-              <span>
-                <FaCodeBranch /> {repo.forks_count}
-              </span>
-              <span>
-                <FaEye /> {repo.watchers_count}
-              </span>
-              <span>
-                <FaRulerHorizontal /> {repo.size}
-              </span>
-              <Link
-                href={repo.html_url}
-                target="_blank"
-                className="block dark:bg-gray-700 bg-white dark:text-white text-black rounded-md p-4 border-solid border-gray-300 border-2 hover:drop-shadow-lg transition-all duration-300 dark:hover:-translate-y-1 text-center"
-              >
-                <FaCode style={{ display: "block", margin: "auto" }} />
-                <span>Source</span>
-              </Link>
+            <div>
+              <h3 className="text-xl">{repo.name}</h3>
+              <p>{repo.description}</p>
+              <div className="flex justify-evenly items-center mt-4 dark:text-slate-200 text-gray-900">
+                <span>
+                  <FaStar /> {repo.stargazers_count}
+                </span>
+                <span>
+                  <FaCodeBranch /> {repo.forks_count}
+                </span>
+                <span>
+                  <FaEye /> {repo.watchers_count}
+                </span>
+                <span>
+                  <FaRulerHorizontal /> {repo.size}
+                </span>
+                <Link
+                  href={repo.html_url}
+                  target="_blank"
+                  className="block dark:bg-gray-700 bg-white dark:text-white text-black rounded-md p-4 border-solid border-gray-300 border-2 hover:drop-shadow-lg transition-all duration-300 dark:hover:-translate-y-1 text-center"
+                >
+                  <FaCode style={{ display: "block", margin: "auto" }} />
+                  <span>Source</span>
+                </Link>
+              </div>
             </div>
 
             <ModalWrapper
