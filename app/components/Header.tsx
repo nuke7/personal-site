@@ -12,16 +12,23 @@ export const Header = () => {
             Personal Page
           </Link>
         </div>
-        <div className="links flex justify-center gap-4">
+        <div className="links flex justify-center sm:gap-8 gap-4">
+          <Link
+            href="https://www.dropbox.com/s/yqpt7hz1auflvki/CV_Marton_Gombos.pdf?dl=0"
+            target="_blank"
+            className="text-slate-200 sm:border-2 sm:border-slate-200 rounded-md sm:px-4 px-1 flex items-center pb-1 hover:bg-slate-200 hover:text-slate-900 active:text-blue-300 active:bg-slate-700 transition-all duration-200"
+          >
+            CV
+          </Link>
           <Link
             href="/about"
-            className="text-slate-200 sm:border-2 sm:border-slate-200 rounded-md px-4 flex items-center pb-1 hover:bg-slate-200 hover:text-slate-900 active:text-blue-300 active:bg-slate-700 transition-all duration-200"
+            className="text-slate-200 sm:border-2 sm:border-slate-200 rounded-md sm:px-4 px-1 flex items-center pb-1 hover:bg-slate-200 hover:text-slate-900 active:text-blue-300 active:bg-slate-700 transition-all duration-200"
           >
             About
           </Link>
           <Link
             href="/code"
-            className="text-slate-200 sm:border-2 sm:border-slate-200 rounded-md px-4 flex items-center pb-1 hover:bg-slate-200 hover:text-slate-900 active:text-blue-300 active:bg-slate-700 transition-all duration-200"
+            className="text-slate-200 sm:border-2 sm:border-slate-200 rounded-md sm:px-4 px-1 flex items-center pb-1 hover:bg-slate-200 hover:text-slate-900 active:text-blue-300 active:bg-slate-700 transition-all duration-200"
           >
             Repositories
           </Link>
