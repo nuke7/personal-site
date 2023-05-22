@@ -2,7 +2,7 @@ import Link from "next/link";
 import DarkModeButton from "./DarkModeButton";
 export const Header = () => {
   return (
-    <header className="bg-blue-800 p-4 border-b-4 border-white sticky top-0 z-50">
+    <header className="bg-blue-800 p-4 border-b-4 border-white sticky top-0 z-50 w-screen">
       <div className="w-11/12 max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between items-center">
         <div className="mb-2 text-center">
           <Link
