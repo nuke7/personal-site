@@ -122,7 +122,7 @@ export default async function AboutPage() {
 
       <section>
         <h2 className="dark:text-gray-200 text-3xl mt-10 text-center">
-          Last 3 places of work
+          Latest work experiences
         </h2>
         {experience.map((company: company) => (
           <div key={company.id}>
