@@ -14,7 +14,7 @@ export const Header = () => {
         </div>
         <div className="links flex justify-center sm:gap-8 gap-4">
           <Link
-            href="https://www.dropbox.com/s/yqpt7hz1auflvki/CV_Marton_Gombos.pdf?dl=0"
+            href="https://www.dropbox.com/scl/fi/5zy80zrq1kvjkxpmanxz0/CV_Marton_Gombos.pdf?rlkey=0ad7p4ks3judo1622pu6fiq19"
             target="_blank"
             className="text-slate-200 sm:border-2 sm:border-slate-200 rounded-md sm:px-4 px-1 flex items-center pb-1 hover:bg-slate-200 hover:text-slate-900 active:text-blue-300 active:bg-slate-700 transition-all duration-200"
           >
