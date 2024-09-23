@@ -1,33 +1,32 @@
-[
-  {
-    "id": 0,
-    "name": "Chemaxon",
-    "description": "Working with react, typescript, material-ui, and storybook to create user interface components for the company's different products.",
-    "role": "Frontend Developer",
-    "from": "Jul 2023",
-    "to": "Present"
-  },{
-    "id": 1,
-    "name": "Freelancer",
-    "description": "Designed and implemented the user interface for an NFT deployment into metaverse service's middleware with figma, utilizing the established company color scheme. Developed frontend components using vue3 to enhance user experience and meet changing requirements in an agile environment. Collaborated closely with PO to ensure maximum usability and functionality.",
-    "role": "Frontend Developer",
-    "from": "Jul 2022",
-    "to": "Present"
-  },
-  {
-    "id": 2,
-    "name": "Diligent",
-    "description": "Developed and implemented angular frontend components, improving the user experience. Conducted thorough UI testing to ensure optimal functionality and usability. Collaborated closely with stakeholders in an agile environment, ensuring effective communication and alignment on UI/UX vision..",
-    "role": "Software Engineer",
-    "from": "Jan 2022",
-    "to": "Jul 2023"
-  },
-  {
-    "id": 3,
-    "name": "Deel Kft.",
-    "description": "Built a User Interface connected to a headless node.js CMS system (Strapi) for administrators. Created and Edited basic RESTful API endpoints with node.js (Strapi). Created basic design for a functional user interface together with the senior developer",
-    "role": "Junior Frontend Developer",
-    "from": "Jun 2021",
-    "to": "Feb 2022"
-  }
+[{
+        "id": 0,
+        "name": "Chemaxon",
+        "description": "Working with react, typescript, material-ui, and storybook to create user interface components for the company's different products.",
+        "role": "Frontend Developer",
+        "from": "Jul 2023",
+        "to": "Sep 2024"
+    }, {
+        "id": 1,
+        "name": "Freelancer",
+        "description": "Designed and implemented the user interface for an NFT deployment into metaverse service's middleware with figma, utilizing the established company color scheme. Developed frontend components using vue3 to enhance user experience and meet changing requirements in an agile environment. Collaborated closely with PO to ensure maximum usability and functionality.",
+        "role": "Frontend Developer",
+        "from": "Jul 2022",
+        "to": "Present"
+    },
+    {
+        "id": 2,
+        "name": "Diligent",
+        "description": "Developed and implemented angular frontend components, improving the user experience. Conducted thorough UI testing to ensure optimal functionality and usability. Collaborated closely with stakeholders in an agile environment, ensuring effective communication and alignment on UI/UX vision..",
+        "role": "Software Engineer",
+        "from": "Jan 2022",
+        "to": "Jul 2023"
+    },
+    {
+        "id": 3,
+        "name": "Deel Kft.",
+        "description": "Built a User Interface connected to a headless node.js CMS system (Strapi) for administrators. Created and Edited basic RESTful API endpoints with node.js (Strapi). Created basic design for a functional user interface together with the senior developer",
+        "role": "Junior Frontend Developer",
+        "from": "Jun 2021",
+        "to": "Feb 2022"
+    }
 ]
