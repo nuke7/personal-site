@@ -101,6 +101,9 @@ export default async function AboutPage() {
             </div>
           </div>
         ))}
+        <p className="text-gray-400 italic font-small my-4">
+          * Randomly generated values
+        </p>
       </section>
 
       <section>
@@ -154,9 +157,6 @@ export default async function AboutPage() {
         </p>
         <p className="dark:text-gray-200 mt-2 mb-10 lg:text-center">
           Software Engineering - Unfinished
-        </p>
-        <p className="text-gray-400 italic font-small my-4">
-          * Randomly generated values
         </p>
       </section>
       <Link
