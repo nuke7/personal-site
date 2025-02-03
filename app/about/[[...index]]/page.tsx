@@ -4,6 +4,8 @@ import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import experience from "../../data/experience.json";
 import languages from "../../data/languages.json";
 import technical from "../../data/technical.json";
+import Image from "next/image";
+
 
 export const metadata = {
   title: "About Page",
@@ -25,11 +27,12 @@ type company = {
 };
 
 export default async function AboutPage() {
+
   return (
     <div className="mx-auto px-4 sm:px-24 max-w-7xl pb-5 bg-slate-200 dark:bg-slate-800">
       <h1 className="text-4xl dark:text-slate-200 mb-2 pt-4 text-center">About me</h1>
       <p className="dark:text-gray-200 mt-2 italic text-center">
-        Frontend Developer with 4 years of remote work experience focusing on UX and product consulting.
+        Frontend Developer with 4+ years of remote work experience focusing on UX and product consulting.
       </p>
       <ProfilePic />
       <section className="flex justify-center mb-5 items-center gap-10">
@@ -86,10 +89,25 @@ export default async function AboutPage() {
         </p>
       </section>
 
-      <section>
-        <h2 className="dark:text-gray-200 text-3xl mt-10 text-center">
-          Progress Bars for Technical Skills 😜*
-        </h2>
+      <section id="skills">
+        <div className="flex justify-center items-center">
+          <form action="/about#skills">
+            <button
+              type="submit"
+              className="bg-blue-500 dark:bg-blue-300 hover:bg-blue-400 dark:hover:bg-blue-200 text-white text-2xl font-bold py-2 px-4 rounded-full mt-10 mr-4"
+            >
+              <Image
+                src="/images/refresh.svg"
+                alt="refresh icon"
+                width={33}
+                height={33}
+              />
+            </button>
+          </form>
+          <h2 className="dark:text-gray-200 text-3xl mt-10 text-center">
+            Progress Bars for Technical Skills 😜***
+          </h2>
+        </div>
         {technical.map((tech: progressBarType) => (
           <div key={tech.id}>
             <p className="dark:text-gray-200 mt-5">{tech.title}</p>
@@ -101,8 +119,8 @@ export default async function AboutPage() {
             </div>
           </div>
         ))}
-        <p className="text-gray-400 italic font-small my-4">
-          * Randomly generated values
+        <p className="text-gray-400 italic text-xl font-semibold my-4">
+          *** Randomly generated values
         </p>
       </section>
 
@@ -168,3 +186,4 @@ export default async function AboutPage() {
     </div>
   );
 }
+
