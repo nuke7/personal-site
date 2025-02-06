@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-before-interactive-script-outside-document */
 import { ProfilePic } from "@/app/components/ProfilePic";
 import Link from "next/link";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
@@ -5,6 +6,7 @@ import experience from "../../data/experience.json";
 import languages from "../../data/languages.json";
 import technical from "../../data/technical.json";
 import Image from "next/image";
+import Script from "next/script";
 
 
 export const metadata = {
@@ -64,6 +66,34 @@ export default async function AboutPage() {
           />
         </Link>
       </section>
+      <div id="docsbot-chat"></div>
+      <Script
+        id="docsbot-script"
+        strategy="afterInteractive"
+      >{`
+        window.DocsBotAI=window.DocsBotAI||{};
+        window.DocsBotAI.init = function(options) {
+          const iframe = document.createElement('iframe');
+          iframe.src = 'https://docsbot.ai/iframe/lEbh6kZfSt1WpahkZDjA/UlNRzRBYbLXCQ1jEuNKp';
+          iframe.style.border = 'none';
+          iframe.style.position = 'fixed';
+          iframe.style.bottom = '20px';
+          iframe.style.right = '20px';
+          iframe.style.width = '300px';
+          iframe.style.height = '400px';
+          iframe.style.backgroundColor = 'transparent';
+          
+          const container = document.getElementById('docsbot-chat');
+          if (container) {
+            container.appendChild(iframe);
+          }
+        };
+
+        // Initialize the widget
+        window.DocsBotAI.init({
+          id: 'lEbh6kZfSt1WpahkZDjA'
+        });
+      `}</Script>
       <section className="flex flex-col lg:grid lg:grid-cols-2 lg:mx-auto lg:max-w-[66%]">
         <p className="dark:text-gray-200 mt-5 font-bold lg:text-center">
           My favorite technology is:
