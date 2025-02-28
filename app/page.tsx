@@ -55,7 +55,7 @@ export default async function Home() {
               className="flex flex-col justify-center items-center sm:min-w-56 w-full"
             >
               <img
-                className="object-cover rounded-lg border border-gray-500 hover:-translate-y-1 transition-all duration-200 hover:border-2 hover:border-white mx-auto"
+                className="object-cover rounded-lg border border-gray-500 hover:scale-105 transition-all duration-200 hover:border-2 hover:border-white mx-auto"
                 style={{ width: "100%", maxWidth: "500px" }}
                 src={project.image}
                 alt="project thumbnail"

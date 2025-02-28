@@ -1,11 +1,16 @@
+import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 
 import "./globals.css";
+import { Nunito } from "next/font/google";
+
+const nunito = Nunito({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Personal Page",
   description: "Personal developer website",
 };
+
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -13,9 +18,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       lang="en"
       className="scroll-smooth"
     >
-      <body className="bg-slate-100 dark:bg-slate-800 h-max w-screen overflow-x-hidden">
+      <body className={`${nunito.className} bg-slate-100 dark:bg-slate-800 h-max w-screen overflow-x-hidden transition-colors duration-300`}>
         <Header />
-        {children}
+        <main>
+          {children}
+        </main>
       </body>
     </html>
   );
