@@ -63,7 +63,10 @@ export default async function AboutPage() {
         Technical Skills*
       </h2>
       <form action="/about#skills">
-        <button type="submit" className="p-3 bg-blue-700/80 dark:bg-blue-600/30 rounded-full text-white hover:bg-blue-500 dark:hover:bg-blue-400/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
+        <button
+          type="submit"
+          className="p-3 bg-blue-700/80 dark:bg-blue-600/30 rounded-full text-white hover:bg-blue-500 dark:hover:bg-blue-400/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+        >
           <FaSyncAlt size={20} />
         </button>
       </form>
@@ -129,7 +132,6 @@ export default async function AboutPage() {
 
       <div className="max-w-4xl mx-auto mt-8">
         <ProfilePic />
-
         <section className="flex justify-center mb-8 items-center gap-6">
           <SocialLink
             href="https://www.linkedin.com/in/martongombos/"
@@ -144,7 +146,6 @@ export default async function AboutPage() {
             icon={<FaTwitter size={30} />}
           />
         </section>
-
         <section className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <BioCard
             title="My favorite technology is:"
@@ -159,14 +160,41 @@ export default async function AboutPage() {
             content="I spend time with active regeneration - boardgames, computer games, maybe even tabletop role playing games, ball games (tennis, squash and table tennis mostly). I also like to watch movies and series."
           />
         </section>
-
+        <div id="docsbot-chat"></div>
+        <Script id="docsbot-script" strategy="afterInteractive">
+          {`
+            window.DocsBotAI = window.DocsBotAI || {};
+            
+            window.DocsBotAI.init = function(options) {
+              const iframe = document.createElement('iframe');
+              iframe.src = 'https://docsbot.ai/iframe/lEbh6kZfSt1WpahkZDjA/UlNRzRBYbLXCQ1jEuNKp';
+              iframe.style.border = 'none';
+              iframe.style.position = 'fixed';
+              iframe.style.bottom = '20px';
+              iframe.style.right = '20px';
+              iframe.style.width = '300px';
+              iframe.style.height = '400px';
+              iframe.style.backgroundColor = 'transparent';
+              
+              const container = document.getElementById('docsbot-chat');
+              if (container) {
+                container.appendChild(iframe);
+              }
+            };
+            
+            // Initialize the widget
+            window.DocsBotAI.init({
+              id: 'lEbh6kZfSt1WpahkZDjA'
+            });
+          `}
+        </Script>
         <SkillsSection technical={technical} languages={languages} />
         <Link
-        href="/"
-        className="bg-gray-700 rounded-lg text-gray-200 font-bold p-3 pt-2 mt-2 mb-4 hover:bg-blue-700"
-      >
-        Back to home
-      </Link>
+          href="/"
+          className="bg-gray-700 rounded-lg text-gray-200 font-bold p-3 pt-2 mt-2 mb-4 hover:bg-blue-700"
+        >
+          Back to home
+        </Link>
       </div>
     </div>
   );
