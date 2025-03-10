@@ -8,7 +8,6 @@ import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import Floating3DText from "./Floating3DText";
 import RotatingSkillCube from "./RotatingSkillCube";
-import { Footer } from "./Footer";
 
 const ClientMainPage = ({ projects }: { projects: Project[] }) => {
   const parallaxRef = useRef<HTMLDivElement>(null);
@@ -134,7 +133,6 @@ const ClientMainPage = ({ projects }: { projects: Project[] }) => {
           <span className="absolute bottom-0 left-0 w-0 h-full bg-blue-500 transition-all duration-300 group-hover:w-full -z-0"></span>
         </Link>
       </motion.div>
-			<Footer />
     </div>
   );
 };

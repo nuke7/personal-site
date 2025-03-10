@@ -6,7 +6,7 @@ export default async function Home() {
   const projects = await getProjects();
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between w-screen">
+    <main className="flex flex-col items-center w-screen">
       <ClientMainPage projects={projects} />
     </main>
   );
