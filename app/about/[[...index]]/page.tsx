@@ -38,7 +38,7 @@ export default async function AboutPage() {
     <Link
       href={href}
       target="_blank"
-      className="p-3 bg-blue-700/80 dark:bg-blue-600/30 rounded-full text-white hover:bg-blue-500 dark:hover:bg-blue-400/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+      className="p-3 bg-blue-700/80 dark:bg-blue-600/30 rounded-full text-white hover:bg-blue-500 dark:hover:bg-blue-400/50 transition-all duration-300 hover:scale-110 hover:shadow-lg"
     >
       {icon}
     </Link>
