@@ -31,11 +31,10 @@ const RotatingSkillCube = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.6 }}
-      whileInView={{ opacity: 1, scale: 1 }}
+      initial={{ opacity: 0, scale: 0.5 }}
+			whileInView={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.8 }}
-      viewport={{ once: true, margin: "10px" }}
-      className="w-full flex justify-center items-center py-16"
+      className="w-full flex justify-center items-center py-16" 
     >
       <div className="perspective relative h-40 w-40 sm:h-64 sm:w-64">
         <motion.div

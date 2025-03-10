@@ -10,7 +10,7 @@ export const Header = () => {
             href="/"
             className="text-center text-4xl font-bold bg-gradient-to-r from-white via-blue-200 to-slate-200 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300"
           >
-            Personal Page
+            Marton&apos;s Page
           </Link>
         </div>
         <nav className="links flex justify-center sm:gap-8 gap-4">

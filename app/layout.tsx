@@ -7,7 +7,7 @@ import { Nunito } from "next/font/google";
 const nunito = Nunito({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Personal Page",
+  title: "Marton's Page",
   description: "Personal developer website",
 };
 
@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       lang="en"
       className="scroll-smooth"
     >
-      <body className={`${nunito.className} bg-slate-100 dark:bg-slate-800 h-max w-screen overflow-x-hidden transition-colors duration-300`}>
+      <body className={`${nunito.className} bg-slate-100 dark:bg-slate-800 w-screen overflow-x-hidden transition-colors duration-300`}>
         <Header />
         <main>
           {children}

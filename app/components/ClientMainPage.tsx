@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import Floating3DText from "./Floating3DText";
 import RotatingSkillCube from "./RotatingSkillCube";
+import { Footer } from "./Footer";
 
 const ClientMainPage = ({ projects }: { projects: Project[] }) => {
   const parallaxRef = useRef<HTMLDivElement>(null);
@@ -45,13 +46,13 @@ const ClientMainPage = ({ projects }: { projects: Project[] }) => {
             className="text-4xl sm:text-6xl text-center font-bold my-5 drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]" 
           />
           <p className="text-xl sm:text-2xl text-center text-white max-w-2xl mx-auto mt-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)]">
-            You can find some example projects below
+            You can find some example frontend projects below
           </p>
         </motion.div>
         
         <motion.div 
           className="flex space-x-6 z-10"
-          initial={{ opacity: 0, scale: 0.5 }}
+					initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.5 }}
         >
@@ -95,38 +96,35 @@ const ClientMainPage = ({ projects }: { projects: Project[] }) => {
         id="projects"
       ></div>
       
-      {/* Add Rotating Skill Cube */}
       <div className="bg-gradient-to-b from-transparent to-slate-900/30">
-        <RotatingSkillCube />
+        <div className="py-16 mb-24">
+          <RotatingSkillCube />
+        </div>
       </div>
 
-      {projects.map((project: Project, index: number) => (
-        <motion.div
-          key={project._id}
-          className={`parallax-section bg-fixed bg-no-repeat bg-cover bg-center`}
-          style={{ backgroundImage: `url(${project.bgUrl})` }}
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: index * 0.2 }}
-          viewport={{ once: true, margin: "-100px" }}
-        >
-          <ProjectCard project={project} />
-          
-          <div
-            className="w-screen h-[50vw] bg-fixed bg-no-repeat bg-cover bg-center flex flex-col justify-center items-center gap-10 relative"
+      <div className="flex flex-col gap-16 mt-8 mb-16">
+        {projects.map((project: Project, index: number) => (
+          <motion.div
+            key={project._id}
+            className={`parallax-section bg-fixed bg-no-repeat bg-cover bg-center`}
             style={{ backgroundImage: `url(${project.bgUrl})` }}
+            initial={{ opacity: 1, y: 0 }}
           >
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black/50"></div>
-          </div>
-        </motion.div>
-      ))}
+            <ProjectCard project={project} />
+            
+            <div
+              className="w-screen h-[40vw] bg-fixed bg-no-repeat bg-cover bg-center flex flex-col justify-center items-center relative gap-10"
+              style={{ backgroundImage: `url(${project.bgUrl})` }}
+            >
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black/50"></div>
+            </div>
+          </motion.div>
+        ))}
+      </div>
       
       <motion.div 
-        className="w-full py-16 bg-gradient-to-t from-black via-slate-900 to-transparent flex justify-center"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
+        className="w-full py-8 bg-gradient-to-t from-black via-slate-900 to-transparent flex justify-center"
+        initial={{ opacity: 1 }}
       >
         <Link
           href="/about"
@@ -136,6 +134,7 @@ const ClientMainPage = ({ projects }: { projects: Project[] }) => {
           <span className="absolute bottom-0 left-0 w-0 h-full bg-blue-500 transition-all duration-300 group-hover:w-full -z-0"></span>
         </Link>
       </motion.div>
+			<Footer />
     </div>
   );
 };
