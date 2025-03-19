@@ -65,7 +65,7 @@ export default async function AboutPage() {
       <form action="/about#skills">
         <button
           type="submit"
-          className="p-3 bg-blue-700/80 dark:bg-blue-600/30 rounded-full text-white hover:bg-blue-500 dark:hover:bg-blue-400/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+          className="p-3 bg-blue-700/80 dark:bg-blue-600/30 rounded-full text-white hover:bg-blue-500 dark:hover:bg-blue-400/50 transition-all duration-300 hover:scale-105 hover:shadow-lg"
         >
           <FaSyncAlt size={20} />
         </button>
@@ -173,7 +173,7 @@ export default async function AboutPage() {
               iframe.style.bottom = '20px';
               iframe.style.right = '20px';
               iframe.style.width = '300px';
-              iframe.style.height = '400px';
+              iframe.style.height = '425px';
               iframe.style.backgroundColor = 'transparent';
               
               const container = document.getElementById('docsbot-chat');
