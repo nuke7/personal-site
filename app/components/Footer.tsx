@@ -1,4 +1,4 @@
-// Create new component: app/components/Footer.tsx
+
 import Link from "next/link";
 import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
@@ -12,7 +12,7 @@ export const Footer = () => {
             <p className="text-sm text-gray-400">Frontend Developer</p>
           </div>
           
-          <div className="flex space-x-4 mb-4 md:mb-0">
+          <div className="flex space-x-12 mb-4 md:mb-0">
             <SocialIcon href="https://www.linkedin.com/in/martongombos/" icon={<FaLinkedinIn />} label="LinkedIn" />
             <SocialIcon href="https://github.com/nuke7" icon={<FaGithub />} label="GitHub" />
             <SocialIcon href="https://twitter.com/nuke7official" icon={<FaTwitter />} label="Twitter" />

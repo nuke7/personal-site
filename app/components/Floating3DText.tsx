@@ -8,7 +8,6 @@ interface Floating3DTextProps {
 }
 
 const Floating3DText = ({ text, className = "" }: Floating3DTextProps) => {
-  // Animation for floating effect
   const floatingAnimation = {
     y: [0, -10, 0],
     transition: {

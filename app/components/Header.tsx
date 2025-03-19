@@ -30,7 +30,6 @@ export const Header = () => {
   );
 };
 
-// Reusable NavLink component
 const NavLink = ({ href, children, target }: { href: string; children: React.ReactNode; target?: string }) => (
   <Link
     href={href}

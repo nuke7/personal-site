@@ -4,7 +4,7 @@ export interface Repository {
   name: string;
   full_name: string;
   private: boolean;
-  owner: any; // The actual type of "owner" should be defined
+  owner: any; // The actual type of "owner" should be defined later
   html_url: string;
   description: string;
   fork: boolean;
@@ -68,7 +68,7 @@ export interface Repository {
   archived: boolean;
   disabled: boolean;
   open_issues_count: number;
-  license: any; // The actual type of "license" should be defined
+  license: any; // The actual type of "license" should be defined later
   allow_forking: boolean;
   is_template: boolean;
   web_commit_signoff_required: boolean;
