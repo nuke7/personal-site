@@ -27,7 +27,7 @@ const ClientMainPage = ({ projects }: { projects: Project[] }) => {
             className='text-4xl sm:text-6xl text-center font-bold my-5 drop-shadow-[0_5px_5px_rgba(0,0,0,0.5)]'
           />
           <p className='text-xl sm:text-2xl text-center text-white max-w-2xl mx-auto mt-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.7)]'>
-            You can find some example frontend projects below
+            Here are some example frontend projects from Sanity
           </p>
         </motion.div>
 
