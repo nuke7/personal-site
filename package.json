@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@behold/react": "^0.1.10",
     "@nextui-org/react": "^1.0.0-beta.12",
     "@portabletext/react": "^3.0.0",
     "@types/node": "18.15.11",
