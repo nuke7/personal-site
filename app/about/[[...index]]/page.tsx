@@ -177,10 +177,12 @@ export default async function AboutPage() {
         <h2 className='dark:text-gray-200 text-3xl mb-8 text-center font-bold'>
           Sneak peek into my hobbies
         </h2>
-        <BeholdWidget feedId='s7CCp0lk8JiBuYDyw5gw' />
-        <Link
+        <div className='mb-8'>
+          <BeholdWidget feedId='s7CCp0lk8JiBuYDyw5gw' />
+        </div>
+        <Link 
           href='/'
-          className='bg-gray-700 rounded-lg text-gray-200 font-bold p-3 pt-2 mt-2 mb-4 hover:bg-blue-700'
+          className='bg-gray-700 rounded-lg text-gray-200 font-bold p-3 pt-2 mt-8 mb-4 hover:bg-blue-700'
         >
           Back to home
         </Link>
