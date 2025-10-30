@@ -126,7 +126,7 @@ export default async function AboutPage() {
         About me
       </h1>
       <p className='dark:text-gray-200 mt-2 italic text-center text-lg max-w-2xl mx-auto'>
-        Frontend Developer with 4+ years of remote work experience focusing on UX and
+        Frontend Developer with 5+ years of remote work experience focusing on UX and
         product consulting.
       </p>
 
