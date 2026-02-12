@@ -50,6 +50,9 @@ importers:
       next-sanity:
         specifier: ^4.1.7
         version: 4.3.4(@sanity/icons@3.7.4(react@18.2.0))(@sanity/types@3.99.0(@types/react@18.0.37))(@sanity/ui@2.16.22(@emotion/is-prop-valid@1.4.0)(react-dom@18.2.0(react@18.2.0))(react-is@18.3.1)(react@18.2.0)(styled-components@6.3.9(react-dom@18.2.0(react@18.2.0))(react@18.2.0)))(@types/react@18.0.37)(@types/styled-components@5.1.36)(next@13.4.0(@babel/core@7.29.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react@18.2.0)(sanity@3.99.0(@emotion/is-prop-valid@1.4.0)(@types/node@22.19.11)(@types/react-dom@18.0.11)(@types/react@18.0.37)(immer@10.2.0)(jiti@2.6.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(styled-components@6.3.9(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(typescript@5.0.4)(yaml@2.8.2))(styled-components@6.3.9(react-dom@18.2.0(react@18.2.0))(react@18.2.0))
+      node:
+        specifier: ^22.15.11
+        version: 22.22.0
       postcss:
         specifier: 8.4.22
         version: 8.4.22
@@ -4533,11 +4536,19 @@ packages:
       sass:
         optional: true
 
+  node-bin-setup@1.1.4:
+    resolution: {integrity: sha512-vWNHOne0ZUavArqPP5LJta50+S8R261Fr5SvGul37HbEDcowvLjwdvd0ZeSr0r2lTSrPxl6okq9QUw8BFGiAxA==}
+
   node-html-parser@6.1.13:
     resolution: {integrity: sha512-qIsTMOY4C/dAa5Q5vsobRpOOvPfC4pB61UVW2uSwZNUp0QU/jCekTal1vMmbO0DgdHeLUJpv/ARmDqErVxA3Sg==}
 
   node-releases@2.0.27:
     resolution: {integrity: sha512-nmh3lCkYZ3grZvqcCH+fjmQ7X+H0OeZgP40OierEaAptX4XofMh5kwNbWh7lBduUzCcV/8kZ+NDLCwm2iorIlA==}
+
+  node@22.22.0:
+    resolution: {integrity: sha512-jw7A6N7prT5C8i42w3pt4QJix6hH4N1MRR0TSlDpQs2PxjFHHRORDs+1GMFll9FBWkIE9Rx6pO5yv9nhe/pU0w==}
+    engines: {npm: '>=5.0.0'}
+    hasBin: true
 
   normalize-package-data@2.5.0:
     resolution: {integrity: sha512-/5CMN3T0R4XTj4DcGaexo+roZSdSFW/0AOOTROrjxzCG1wrWXEsGbRKevjlIL+ZDE4sZlJr5ED4YW0yqmkK+eA==}
@@ -9977,7 +9988,7 @@ snapshots:
       eslint: 8.38.0
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0(eslint@8.38.0))(eslint@8.38.0)
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@5.62.0(eslint@8.38.0)(typescript@5.0.4))(eslint-import-resolver-typescript@3.10.1)(eslint@8.38.0)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@5.62.0(eslint@8.38.0)(typescript@5.0.4))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(eslint@8.38.0))(eslint@8.38.0))(eslint@8.38.0)
       eslint-plugin-jsx-a11y: 6.10.2(eslint@8.38.0)
       eslint-plugin-react: 7.37.5(eslint@8.38.0)
       eslint-plugin-react-hooks: 4.6.2(eslint@8.38.0)
@@ -10007,7 +10018,7 @@ snapshots:
       tinyglobby: 0.2.15
       unrs-resolver: 1.11.1
     optionalDependencies:
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@5.62.0(eslint@8.38.0)(typescript@5.0.4))(eslint-import-resolver-typescript@3.10.1)(eslint@8.38.0)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@5.62.0(eslint@8.38.0)(typescript@5.0.4))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(eslint@8.38.0))(eslint@8.38.0))(eslint@8.38.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -10022,7 +10033,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.32.0(@typescript-eslint/parser@5.62.0(eslint@8.38.0)(typescript@5.0.4))(eslint-import-resolver-typescript@3.10.1)(eslint@8.38.0):
+  eslint-plugin-import@2.32.0(@typescript-eslint/parser@5.62.0(eslint@8.38.0)(typescript@5.0.4))(eslint-import-resolver-typescript@3.10.1(eslint-plugin-import@2.32.0(eslint@8.38.0))(eslint@8.38.0))(eslint@8.38.0):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.9
@@ -11376,12 +11387,18 @@ snapshots:
       - '@babel/core'
       - babel-plugin-macros
 
+  node-bin-setup@1.1.4: {}
+
   node-html-parser@6.1.13:
     dependencies:
       css-select: 5.2.2
       he: 1.2.0
 
   node-releases@2.0.27: {}
+
+  node@22.22.0:
+    dependencies:
+      node-bin-setup: 1.1.4
 
   normalize-package-data@2.5.0:
     dependencies:
