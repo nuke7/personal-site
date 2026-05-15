@@ -163,7 +163,7 @@ export default async function AboutPage() {
         <iframe
           title='docsbot'
           className='rounded-lg mb-6'
-          src='https://docsbot.ai/iframe/lEbh6kZfSt1WpahkZDjA/BRHzZZlwSjbm2HZSme3H'
+          src='https://docsbot.ai/iframe/ERPSktC037dKCv7Wmp9h/PCL0VBLhyMsvNNGdT1r2'
           width='100%'
           height='400px'
           frameBorder='0'
@@ -180,7 +180,7 @@ export default async function AboutPage() {
         <div className='mb-8'>
           <BeholdWidget feedId='s7CCp0lk8JiBuYDyw5gw' />
         </div>
-        <Link 
+        <Link
           href='/'
           className='bg-gray-700 rounded-lg text-gray-200 font-bold p-3 pt-2 mt-8 mb-4 hover:bg-blue-700'
         >
